@@ -26,8 +26,8 @@ public class Aplication {
 		user_concret.unlike();
 		user_concret.unlike();
 		user_concret.unlike();
-         // protestiti raznie varianti
-		//протестировать разные варианты уйти в минус, удалить лайк пользв. которого нет
+         // protestiti raznie varianti, uiti v minus, uadliti laik polizovatelia kotorogo net
+	
 		
 		for (Likable likable : LikesConteiner.likes.keySet()) {
 			System.out.println(likable.toString() + " " +  LikesConteiner.likes.get(likable));
