@@ -19,7 +19,7 @@ public class LikesConteiner {
 			 likes.put(likable, 1);
 	}
 	
-	//êîãäà êîë-âî ëàéêîâ äîõîäèò äî 0 óäàëèòü ïîëíîñòüþ îáüåêò èç êîíòåéíåðà hashmap
+	//ÐºÐ¾Ð³Ð´Ð° ÐºÐ¾Ð»-Ð²Ð¾ Ð»Ð°Ð¹ÐºÐ¾Ð² Ð´Ð¾Ñ…Ð¾Ð´Ð¸Ñ‚ Ð´Ð¾ 0 ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ Ð¿Ð¾Ð»Ð½Ð¾ÑÑ‚ÑŒÑŽ Ð¾Ð±ÑŒÐµÐºÑ‚ Ð¸Ð· ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€Ð° hashmap
 	public static void removeLike(Likable likable) {
 		 if(likes.containsKey(likable) && likes.get(likable) > 1) {
 			 
