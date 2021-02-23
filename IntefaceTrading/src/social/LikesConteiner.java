@@ -21,16 +21,12 @@ public class LikesConteiner {
 	
 	//когда кол-во лайков доходит до 0 удалить полностью обьект из контейнера hashmap
 	public static void removeLike(Likable likable) {
-		 if(likes.containsKey(likable)) {
+		 if(likes.containsKey(likable) && likes.get(likable) > 1) {
 			 
 		likes.put(likable, likes.get(likable)-1);	
 		 }
-		 
-//		 if(likes.get(likable) == 0) {
-//			 likes.remove(likable);
-//			 
-//		 }
-			 
+		 else likes.remove(likable);
+		
 	}
 	
 	

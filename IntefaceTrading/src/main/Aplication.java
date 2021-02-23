@@ -11,7 +11,7 @@ public class Aplication {
 	public static void main(String[] args) {
         //obiavliaem tip peremennoi
 		User user_concret = new User("Stas", "pass", "dot@mail.ru");
-		User user_concret2 = new User("", "ff", "email@mail.ru");
+		User user_concret2 = new User(" ", "   dfd", "email@mail.ru");
 		Page p1 = new Page(user_concret);
 		
 		p1.like();
@@ -24,8 +24,8 @@ public class Aplication {
        
 		
 		user_concret.unlike();
-		user_concret.unlike();
-		user_concret.unlike();
+    //	user_concret.unlike();
+	//	user_concret.unlike();
          // protestiti raznie varianti, uiti v minus, uadliti laik polizovatelia kotorogo net
 	
 		
@@ -36,6 +36,11 @@ public class Aplication {
 		
 		
 	//	System.out.println(user_concret);
+		
+		String s = " ";
+        if (s.matches("(?i).*[a-zà-ÿ].*")) {
+            System.out.println(s);
+        }
 		
 	}
 

@@ -24,6 +24,7 @@ public class User implements Likable, Bannable{
 	}
 
 	public void setName(String name) {
+		
 		this.name = name;
 	}
 
@@ -57,17 +58,15 @@ public class User implements Likable, Bannable{
 
 	@Override
 	public void like() {
-     if(getName() != null || !getName().equals("") || getPassword() != " " || getPassword() != null)
+    if(getName().matches("(?i).*[a-zà-ÿ].*") && getPassword().matches("(?i).*[a-zà-ÿ].*") && getEmail().matches("(?i).*[a-zà-ÿ].*"))
 		LikesConteiner.addLike(this);
       
-      else {
-    	  unlike();
-      }
+      
 	}
 
 	@Override
 	public void unlike() {
-
+	    if(getName().matches("(?i).*[a-zà-ÿ].*") && getPassword().matches("(?i).*[a-zà-ÿ].*") && getEmail().matches("(?i).*[a-zà-ÿ].*"))
 		LikesConteiner.removeLike(this);
 		
 	}
@@ -76,6 +75,6 @@ public class User implements Likable, Bannable{
 	
 	@Override
 	public String toString() {
-		return "User [name=" + name + ", password=" + password + ", email=" + email + "]";
+		return "User [name=" + name.trim() + ", password=" + password.trim() + ", email=" + email.trim()  + "]";
 	}
 }
