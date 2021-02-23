@@ -35,12 +35,6 @@ public class Aplication {
 		}
 		
 		
-	//	System.out.println(user_concret);
-		
-		String s = " ";
-        if (s.matches("(?i).*[a-zà-ÿ].*")) {
-            System.out.println(s);
-        }
 		
 	}
 
