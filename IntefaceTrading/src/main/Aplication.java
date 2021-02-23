@@ -24,8 +24,9 @@ public class Aplication {
        
 		
 		user_concret.unlike();
-    //	user_concret.unlike();
+        //	user_concret.unlike();
 	//	user_concret.unlike();
+		
          // protestiti raznie varianti, uiti v minus, uadliti laik polizovatelia kotorogo net
 	
 		
